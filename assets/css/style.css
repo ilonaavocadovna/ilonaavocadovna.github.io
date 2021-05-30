@@ -16,6 +16,10 @@ p {
     line-height: 30px;
 }
 
+span {
+    font-family: 'Roboto Slab', serif;
+}
+
 footer p {
     font-size: 20px;
     line-height: 20px;
@@ -39,6 +43,22 @@ footer {
     padding-bottom: 20px;
 }
 
+.pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.pic-container span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 2% 2% 2%;
+    background-color: #f3fff2;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 20px;
@@ -58,5 +78,9 @@ footer {
     .pics img {
         width: 80vw;
         height: auto;
+    }
+
+    .pic-container span {
+        font-size: 12px;
     }
 }
